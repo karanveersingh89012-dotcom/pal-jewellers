@@ -1,0 +1,6 @@
+pal_jewellers/
+├── codemagic.yaml             <-- Placed here
+├── google-services.json       <-- Placed here in the root folder
+├── pubspec.yaml
+├── assets/
+└── lib/

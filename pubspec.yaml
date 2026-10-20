@@ -1,0 +1,74 @@
+name: pal_jewellers
+description: "A premium jewellery catalog and order inquiry app for Pal Jewellers, Ghungrana."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # Typography & Design
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+
+  # Firebase Services
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.1
+  firebase_storage: ^12.1.0
+  firebase_messaging: ^15.0.1
+
+  # Local Notifications & Persistence
+  flutter_local_notifications: ^17.2.2
+  shared_preferences: ^2.3.2
+
+  # Device Hardware, Media & Actions
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.0
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/crown_pj_logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#F6F1E9"
+  adaptive_icon_foreground: "assets/icons/crown_pj_logo.png"
+  web:
+    generate: true
+    image_path: "assets/icons/crown_pj_logo.png"
+    background_color: "#F6F1E9"
+    theme_color: "#4F200D"
+
+flutter_native_splash:
+  color: "#F6F1E9"
+  image: "assets/icons/crown_pj_logo.png"
+  android: true
+  ios: true
+  web: true
+  android_12:
+    color: "#F6F1E9"
+    image: "assets/icons/crown_pj_logo.png"
+    icon_background_color: "#F6F1E9"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
